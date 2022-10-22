@@ -11,7 +11,7 @@
 	<groupId>com.pluralsight-capgemini</groupId>
 	<artifactId>BenPeng-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BenPengDemoApplication</name>
+	<name>BenPeng-demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -53,15 +53,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<skip>true</skip>
-					<mainClass>com.places.Main</mainClass>
-				</configuration>
 				<executions>
 					<execution>
+						<id>repackage</id>
 						<goals>
 							<goal>repackage</goal>
 						</goals>
+						<configuration>
+							<classifier>exec</classifier>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
