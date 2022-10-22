@@ -43,7 +43,6 @@
 				<configuration>
 					<mainClass>com.places.Main</mainClass>
 				</configuration>
-
 				<executions>
 					<execution>
 						<goals>
